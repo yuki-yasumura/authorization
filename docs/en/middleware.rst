@@ -24,7 +24,7 @@ A basic example would be::
 
     class Application extends BaseApplication implements AuthorizationServiceProviderInterface
     {
-        public function getAuthorizationService(ServerRequestInterface $request, ResponseInterface $response)
+        public function getAuthorizationService(ServerRequestInterface $request): AuthorizationServiceInterface
         {
             $resolver = new OrmResolver();
 
